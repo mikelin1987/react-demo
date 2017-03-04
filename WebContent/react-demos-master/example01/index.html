@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../../build/react.js"></script>
+<script src="../../build/react-dom.js"></script>
+<script src="../../build/browser.min.js"></script>
+
+<script type="text/babel">
+
+     class HelloMessage extends React.Component {
+  		render() {
+    		return <div>Your gender is '{this.props.gender}'</div>;
+  		} 
+	}
+
+	ReactDOM.render(
+		<HelloMessage name="Jane" gender="Female" />, 
+		document.getElementById('container'));
+
+
+    </script>
+
+</head>
+<body>
+	<div id="container" style="background: #A020F0; color: #FFFFFF; width: 200px; padding: 5px;"></div>
+</body>
+</html>
