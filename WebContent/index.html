@@ -28,7 +28,18 @@
 
     var html = '<ul>';
     for ( var i = 0; i < 13; i++) {
-        var link = 'react-demos-master/demo' + PrefixInteger((i + 1), 2) + '/index.html';
+        var link = 'react-demos/demo' + PrefixInteger((i + 1), 2) + '/index.html';
+        html += '<li><a href="' + link + '">' + link + '</a></li>';
+    }
+
+    html += '</ul>';
+
+    document.write(html);
+     
+    
+    html = '<ul>';
+    for ( var i = 0; i < 11; i++) {
+        var link = 'react-demos/example' + PrefixInteger((i + 1), 2) + '/index.html';
         html += '<li><a href="' + link + '">' + link + '</a></li>';
     }
 
